@@ -22,8 +22,14 @@ const app = express()
 
 app.get('/', (request, response) => {response.end('<h1>Hello! Welcome to the UserLand!</h1>')})
 app.get('/users/:id', (request, response) => {
-  const userName = users[request.params.id - 1]
-  response.end(`<h1>You are ${userName}</h1>`)
+  userId = request.params.id - 1
+  if(userId < users.length){
+    const userName = users[userId]
+    response.end(`<h1>You are ${userName}</h1>`)
+  }
+  else{
+    response.end(`<h1>Page Not Available</h1>`)
+  }
 })
 app.get('/', (request, response) => {response.end('<h1>Page Not Available</h1>')})
 
