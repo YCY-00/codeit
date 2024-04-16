@@ -1,4 +1,8 @@
-GET http://localhost:3000/api/members?tema=engineering
+GET http://localhost:3000/api/members?team=engineering
+
+###
+
+GET http://localhost:3000/api/members/3
 
 ###
 
@@ -6,8 +10,7 @@ POST http://localhost:3000/api/members
 Content-Type: application/json
 
 {
-  "id": 11,
-  "name": "Jake",
+  "name": "Jhon",
   "team": "Engineering",
   "position": "Android Developer",
   "emailAddress": "jake@google.com",
@@ -23,15 +26,7 @@ PUT http://localhost:3000/api/members/11
 Content-Type: application/json
 
 {
-  "id": 11,
-  "name": "Jake",
-  "team": "Engineering",
-  "position": "Android Developer",
-  "emailAddress": "jake@google.com",
-  "phoneNumber": "010-xxxx-xxxx",
-  "admissionDate": "2018/12/15",
-  "birthday": "2024/11/08",
-  "profileImage": "profile11.png"
+  "position": "IOS Developer"
 }
 
 ###
