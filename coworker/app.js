@@ -12,6 +12,9 @@ app.use((request, response, next) => {
  
 // let members = require('./members.js')
 
+app.get('/', (request, response) => {
+  response.send(`<h1>URL should include /api/members</h1>`)
+})
 app.get('/api/members', async (request, response) => {
   const {team} = request.query
   if (team){
