@@ -1,4 +1,4 @@
-users = ['Tom', 'John', 'Jane', 'Harry', 'Alice']
+users = ["Tom", "John", "Jane", "Harry", "Alice"];
 
 // const http = require('http')
 // const server = http.createServer((request, response) => {
@@ -17,20 +17,23 @@ users = ['Tom', 'John', 'Jane', 'Harry', 'Alice']
 // })
 // server.listen(3000)
 
-const express = require('express')
-const app = express()
+const express = require("express");
+const app = express();
 
-app.get('/', (request, response) => {response.end('<h1>Hello! Welcome to the UserLand!</h1>')})
-app.get('/users/:id', (request, response) => {
-  userId = request.params.id - 1
-  if(userId < users.length){
-    const userName = users[userId]
-    response.end(`<h1>You are ${userName}</h1>`)
+app.get("/", (request, response) => {
+  response.end("<h1>Hello! Welcome to the UserLand!</h1>");
+});
+app.get("/users/:id", (request, response) => {
+  userId = request.params.id - 1;
+  if (userId < users.length) {
+    const userName = users[userId];
+    response.end(`<h1>You are ${userName}</h1>`);
+  } else {
+    response.end(`<h1>Page Not Available</h1>`);
   }
-  else{
-    response.end(`<h1>Page Not Available</h1>`)
-  }
-})
-app.get('/', (request, response) => {response.end('<h1>Page Not Available</h1>')})
+});
+app.get("/", (request, response) => {
+  response.end("<h1>Page Not Available</h1>");
+});
 
-app.listen(3000)
+app.listen(3000);
