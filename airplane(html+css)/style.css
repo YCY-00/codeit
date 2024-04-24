@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.content {
+  width: 640px;
+  margin: 0 auto;
+}
+
+/*배경색*/
+header{
+  background-color: #11172b;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: 'Titillium Web';
+  color: #ffffff;
+  padding: 12px
+}
+
+main{
+  background-color: #f8f8f8;
+}
+
+/*header*/
+header img{
+  height: 24px;
+  margin-right: 10px;
+}
+
+header span{
+  font-weight: 600;
+}
+
+/* description*/
+main .description {
+  color: #b3bdd5;
+  background-color: #ebeff8;
+  padding: 24px 32px;
+  border-radius: 8px;
+}
+
+main .description .depart{
+  font-size: 16px;
+  margin: 0;
+}
+
+main .description .depart img{
+  height: 12px;
+  margin-right: 10px;
+}
+
+main .description .location{
+  font-size: 32px;
+  font-family: 'Titillium Web';
+  color: #000000;
+  margin: 8px 0 24px;
+}
+
+main .description span#date{
+  font-size: 16px;
+  color: #000000;
+  background-color: #f8f8f8;
+  padding: 8px 24px;
+  border-radius: 4px;
+}
+
+main .description p{
+  font-size: 12px;
+  margin: 16px 0 0;
+}
+
+main hr{
+  border: 1px dashed #b6bfd3;
+  margin: 20px 0;
+}
+
+/*ticket*/
+main .ticket{
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 8px 0 24px;
+  margin-bottom: 20px;
+}
+
+main .ticket h2{
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'Titillium Web';
+  color: #16bf97;
+  margin: 0 24px;
+}
+
+main .ticket hr{
+  border: 1px solid #dbf1ec;
+  margin: 8px 0 24px
+}
+
+main .ticket .main{
+  margin: 0 24px;
+}
+
+main .ticket .main .sub_title{
+  font-size: 12px;
+  font-weight: 15px;
+  margin: 4px 0;
+  color: #b3bdd5;
+}
+
+main .ticket .main .depart{
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a345e;
+}
+
+main .ticket .main .depart img{
+  width: 18px;
+  margin: 0 10px;
+}
+
+main .ticket .main .airplane{
+  font-size: 16px;
+  color: #0b1f66;
+}
+
+main .ticket .main .footer{
+  font-size: 14px;
+  font-weight: 500;
+  text-align: right;
+}
+
+main .ticket .main .footer a{
+  margin-left: 24px;
+  text-decoration: none;
+  color: #1a345e;
+}
+
+main .ticket .main .footer a.soldout{
+  color: #dce0e8;
+}
