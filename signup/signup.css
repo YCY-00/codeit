@@ -11,10 +11,15 @@ html {
 form {
   margin: 0 auto;
   width: 360px;
+  color: #2c2c2c
 }
 
 h1 {
+  margin: 120px 0 24px;
   text-align: center;
+  font-size: 36px;
+  font-size: 700;
+  color: #4e4e4e
 }
 
 p {
@@ -26,10 +31,19 @@ input {
   width: 360px;
   font-size: 12px;
   padding: 5px;
+  border: 1px solid #d1d1d1;
 }
 
-label > input {
+input::placeholder{
+  color: #ababab;
+}
+
+label input {
   width: 10px;
+}
+
+input[type="file"]{
+  border: none
 }
 
 label {
@@ -50,8 +64,12 @@ textarea{
 }
 
 button{
-  width: 75px;
+  width: 90px;
   height: 40px;
   margin: 10px auto;
   display: block;
+  background-color: #2c2c2c;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
 }
