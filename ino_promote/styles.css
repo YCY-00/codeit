@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  grid-template: 60px 350px 175px 175px/ 2fr 1fr 1fr;
+  grid-template-areas: 
+    "r r r"
+    "o y y"
+    "o g b"
+    "o g p";
+}
+
+@media (max-width: 991px) {
+  body {
+    grid-template: 60px 562px 282px 180px 180px/ 1fr 1fr;
+    grid-template-areas:
+      "r r"
+      "o o"
+      "y y"
+      "g b"
+      "g p";
+  }
+}
+
+@media (max-width: 767px){
+  body {
+    grid-template: 60px 350px 320px 385px 200px 200px/ 1fr;
+    grid-template-areas:
+      "r"
+      "o"
+      "y"
+      "g"
+      "b"
+      "p";
+  }
+}
+
+.div1{
+  background-color: #353535;
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  grid-area: r;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 20px
+}
+
+.div1 h1{
+  color: white;
+  font-size: 20px;
+}
+
+.div2{
+  background-image: url(images/banner_img.jpg);
+  background-size: cover;
+  grid-area: o;
+}
+
+.div3{
+  grid-area: y;
+  padding: 0 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.div3 h2{
+  font-size: 16px;
+  color: #4a4a4a
+}
+
+.div3 h1 {
+  margin: 10px 0 30px;
+  font-size: 20px;
+  color: #181818
+}
+
+.div3 p{
+  font-size: 16px;
+  color: #7a7a7a
+}
+
+.div4{
+  background-image: url(images/img1.jpg);
+  background-size: cover;
+  grid-area: g;
+}
+
+.div5{
+  background-image: url(images/img2.jpg);
+  background-size: cover;
+  grid-area: b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div5 .view{
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: 4px solid white;
+  padding: 9px 40px;
+}
+
+.div6{
+  background-image: url(images/img3.jpg);
+  background-size: cover;
+  grid-area: p;
+}
