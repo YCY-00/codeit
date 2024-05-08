@@ -1,11 +1,12 @@
-const toDoList = document.querySelector("#to-do-list");
+const toDoList = document.querySelector(".list");
 // const addButton = document.querySelector("#add");
 const input = document.querySelector("input");
+let id = 0;
 
 function addNewTodo(text) {
   newList = document.createElement("li");
-  newList.textContent = text;
-  cancle_button = document.createElement("button");
+  id += 1;
+  newList.textContent = `${id}. ${text}`;
 
   toDoList.append(newList);
   // return newList;
@@ -25,7 +26,7 @@ function addToDo(event) {
     // const newItem = addNewTodo(toDo);
     // newItem.addEventListener("click", updateToDo);
     event.target.value = "";
-  } else {
+  } else if (event.key === "Enter") {
     alert("입력값이 없습니다");
   }
 }
@@ -44,4 +45,38 @@ addButton.onclick = () => {
     alert("오늘 할 일을 입력해주세요");
   }
 };
+*/
+
+/*
+const data = [
+  {
+    title: "자바스크립트 공부하기",
+    isClear: true,
+  },
+  {
+    title: "쓰레기 분리수거",
+    isClear: false,
+  },
+  {
+    title: "고양이 밥주기",
+    isClear: true,
+  },
+  {
+    title: "독서하기",
+    isClear: false,
+  },
+  {
+    title: "영어 공부하기",
+    isClear: false,
+  },
+];
+
+data.forEach((toDo, idx) => {
+  const newList = document.createElement("li");
+  newList.textContent = `${idx + 1}. ${toDo.title}`;
+  if (toDo.isClear) {
+    newList.classList.add("done");
+  }
+  toDoList.append(newList);
+});
 */
