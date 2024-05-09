@@ -1,4 +1,4 @@
-body {
+.body {
   display: flex;
   margin: 80px auto;
   max-width: 865px;
@@ -136,7 +136,7 @@ main {
 }
 
 @media (max-width: 944px){
-  body{
+  .body{
     flex-direction: column;
     padding: 0 16px;
   }

@@ -1,4 +1,4 @@
-body {
+.body {
   width: 416px;
   margin: 80px auto;
 }
@@ -138,7 +138,7 @@ section {
 }
 
 @media (max-width: 944px) {
-  body {
+  .body {
     margin: 0;
     padding: 45px 24px;
   }
