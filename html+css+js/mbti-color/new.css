@@ -136,3 +136,28 @@ section {
   border-radius: 8px;
   background-color: #000000;
 }
+
+@media (max-width: 944px) {
+  body {
+    margin: 0;
+    padding: 45px 24px;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  section {
+    margin: 48px 0;
+  }
+
+  section h2 {
+    font-size: 24px;
+    margin: 24px 0;
+  }
+
+  .capital {
+    width: 16px;
+    font-size: 32px;
+  }
+}
