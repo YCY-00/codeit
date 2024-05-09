@@ -1,0 +1,135 @@
+body {
+  display: flex;
+  margin: 80px auto;
+  max-width: 865px;
+  gap: 40px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.sidebar{
+  position: sticky;  /* flex로 공간을 나눈 후, 나눈 공간 내에서 sticky 적용 */
+  top: 80px;
+  background-color: #F5F7FB;
+  border-radius: 80px;
+  padding: 80px 40px;
+  text-align: right;
+}
+
+.title {
+  margin: 0 0 32px;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.sub {
+  font-weight: 400;
+}
+
+.filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  padding: 8px 24px;
+  font-weight: 500;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.filter .remove {
+  width: 12px;
+  height: 12px;
+}
+
+.add{
+  display: block;
+  text-decoration: none;
+  color: #464e5e;
+  border: 2px dashed #dee3ec;
+  border-radius: 8px;
+  padding: 24px 48px;
+}
+
+.add:hover {
+  background-color: #f5f7fb;
+}
+
+.list{
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex; /* 아래의 요소 각각에 inline-block을 부여하는 것도 가능 */
+  align-items: center;
+  padding: 16px 48px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #BFC8DA;
+}
+
+.item:hover{
+  background-color: #f4f7fb;
+}
+
+.item:active { /* 클릭 시 */
+  background-color: #edf0f5;
+}
+
+
+.id {
+  flex-shrink: 0;
+  width: 58px;
+  margin-right: 40px;
+}
+
+.mbti {
+  flex-shrink: 0;
+  width: 76px;
+  margin-right: 25px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #f0f2f5;
+  color: #464e5e;
+  text-align: center;
+  font-weight: 600;
+}
+
+.arrow {
+  flex-grow: 1;
+  width: 50px;
+  height: 0px;
+  border-bottom: 2px dashed #bfc8da; /* 높이 0인 border를 이용해 화살표의 dash 생성 */
+  position: relative;
+}
+
+.arrow-tip {
+  position: absolute; /* tip이 정확한 위치에 도달하도록 제어 */
+  top: -6px;
+  right: -6px;
+  width: 8px;
+  height: 13px;
+}
+
+.color-box {
+  flex-shrink: 0;
+  margin: 0 16px;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e8e8e8;
+  border-radius: 8px;
+}
+
+.color {
+  flex-shrink: 0;
+  width: 105px;
+}

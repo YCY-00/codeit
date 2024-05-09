@@ -1,0 +1,138 @@
+body {
+  width: 416px;
+  margin: 80px auto;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1{
+  margin: 0;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+header a {
+  display: flex; /* 정 중앙에 배치하기 위해 사용 */
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  background: #f5f7fb;
+  border-radius: 50%;
+}
+
+header a:hover{
+  background-color: #edf0f5;
+}
+
+header a img{
+  width: 12px;
+  height: 12px;
+}
+
+section {
+  margin: 56px 0;
+}
+
+.mbti h2, .color h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 24px 0;
+}
+
+.mbti-option{
+  display: flex;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.E{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px; /* .capital에 margin을 추가하는 경우, 글자가 밀려나 줄바꿈 발생 */
+  flex-grow: 1; /* 각 MBTI의 길이를 동일하게 유지 */
+  border: 2px solid #e7ebf2;
+  border-radius: 16px;
+  padding: 14px 40px;
+  color: #8892a6;
+}
+
+.capital {
+  color: #464e5e;
+  width: 20px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.E:hover{
+  background: #f5f7fb;
+  cursor: pointer;
+}
+
+.E.selected{
+  background: #464e5e;
+  border: 2px solid #464e5e;
+}
+
+.E.selected .capital{
+  color: #ffffff;
+}
+
+.random {
+  background: #f5f7fb;
+  border-radius: 8px;
+  padding: 8px;
+  margin-left: 8px;
+  border: none;
+}
+
+.random:hover {
+  background-color: #edf0f5;
+}
+
+.random:active {
+  background-color: #dee4ee;
+}
+
+.random img {
+  width: 16px;
+  height: 16px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input {
+  color: #8892a6;
+  font-size: 24px;
+  width: 100%;
+  border: 2px solid #E7EBF2;
+  border-radius: 16px;
+  padding: 26px 86px 26px 26px;
+}
+
+.input:hover {
+  background: #F5F7FB;
+}
+
+.input:focus {
+  border: 2px solid #464E5E;
+  box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.color-box {
+  position: absolute; /* input 안에 배치하기 위해 absolute 사용 */
+  top: 21px;
+  right: 26px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #000000;
+}
