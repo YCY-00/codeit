@@ -4,7 +4,7 @@ const input = document.querySelector("input");
 let id = 0;
 
 function addNewTodo(text) {
-  newList = document.createElement("li");
+  const newList = document.createElement("li");
   id += 1;
   newList.textContent = `${id}. ${text}`;
 
